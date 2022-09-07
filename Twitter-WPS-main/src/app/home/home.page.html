@@ -1,0 +1,62 @@
+<ion-menu side="start" menuId="first" contentId="main-content">
+  
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+
+  <ion-content class="ion-padding">
+    <!-- <ion-button expand="block" onclick="openMenu()">Open Menu</ion-button> -->
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" class="padrb10" (click)="hideTweet()">
+      <div><span style="position: absolute; margin-left: -100%;margin-top: 30%; text-align: right;"><span *ngIf="hide">Tweet</span></span>
+        <ion-fab-button close-icon="pencil">
+          <ion-icon name="add" size="large"></ion-icon>
+        </ion-fab-button>
+      </div>
+      <ion-fab-list side="top">
+        <!-- <div><span style="position: absolute; margin-left: -120%;margin-top: 30%; text-align: right;">Tweet</span>
+          <ion-fab-button color="light">
+            <ion-icon name="pencil" class="bluecolor" size="large"></ion-icon>
+          </ion-fab-button>
+        </div> -->
+        <div><span style="position: absolute; margin-left: -80%;margin-top: 30%; text-align: right;">Gif</span>
+          <ion-fab-button color="light" size="small">
+            <ion-icon name="videocam-outline" class="bluecolor" size="large"></ion-icon>
+          </ion-fab-button>
+        </div>
+        <div><span style="position: absolute; margin-left: -130%;margin-top: 30%; text-align: right;">Photos</span>
+          <ion-fab-button color="light" size="small">
+            <ion-icon name="image-outline" class="bluecolor" size="large"></ion-icon>
+          </ion-fab-button>
+        </div>
+        <div><span style="position: absolute; margin-left: -130%;margin-top: 30%; text-align: right;">Spaces</span>
+          <ion-fab-button color="light" size="small">
+            <ion-icon name="barcode-outline" class="bluecolor" size="large"></ion-icon>
+          </ion-fab-button>
+        </div>
+      </ion-fab-list>
+    </ion-fab>
+  </ion-content>
+
+  <ion-tabs>
+
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="firstpage">
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="search">
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="notifications">
+        <ion-icon name="notifications-outline"></ion-icon>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="messages">
+        <ion-icon name="mail-outline"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+    
+  </ion-tabs>
+
+</div>

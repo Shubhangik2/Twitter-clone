@@ -1,0 +1,32 @@
+.h1 {
+    padding-top: 100px;
+}
+
+.bluecolor {
+   color: rgb(73, 164, 248);
+}
+  
+  
+.width100 {
+    width: 100%;
+}
+  
+.center {
+    text-align: center;
+}
+.noShadow{
+    background:none; 
+    outline: none; 
+    -webkit-appearance: none; 
+    box-shadow: none !important; 
+    border: none;
+}
+
+.large{
+	font-size: 26px;
+}
+
+ion-searchbar {
+    --background: rgb(228, 224, 224);
+    --border-radius: 50px;
+}
